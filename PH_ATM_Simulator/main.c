@@ -45,14 +45,22 @@ int main(int argc, const char * argv[]) {
     // Main menu loop
     while (1) {
         displayMenu();
-        printf("Enter your choice: ");
+        printf("Enter your choice (default: 1): ");
         
-        if (scanf("%d", &choice) != 1) {
-            clearInputBuffer();
+        // Read input and check if it's empty (just Enter pressed)
+        char input[10];
+        if (fgets(input, sizeof(input), stdin) == NULL) {
+            printf("\nError reading input.\n\n");
+            continue;
+        }
+        
+        // If user just pressed Enter, use default option 1
+        if (input[0] == '\n') {
+            choice = 1;
+        } else if (sscanf(input, "%d", &choice) != 1) {
             printf("\nInvalid input! Please enter a number.\n\n");
             continue;
         }
-        clearInputBuffer();
         
         printf("\n");
         

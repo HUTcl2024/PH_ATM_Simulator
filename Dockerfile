@@ -19,5 +19,5 @@ WORKDIR /data
 # Create a volume for persistent data storage
 VOLUME /data
 
-# Run the ATM simulator
-CMD ["/usr/local/bin/atm_simulator"]
+# Run the ATM simulator with interactive terminal
+ENTRYPOINT ["/usr/local/bin/atm_simulator"]
