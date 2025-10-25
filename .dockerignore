@@ -1,0 +1,16 @@
+# Xcode
+PH_ATM_Simulator.xcodeproj/
+*.xcworkspace
+*.xcuserdata
+
+# Build artifacts
+atm_simulator
+*.o
+*.out
+
+# Data files (these will be managed by Docker volumes)
+balance.txt
+transactions.txt
+
+# macOS
+.DS_Store
