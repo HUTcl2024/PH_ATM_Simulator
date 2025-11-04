@@ -1,0 +1,7 @@
+{
+  "balance_cents": 99800,
+  "transactions": [
+    {"type": 1, "amount": 100000, "balance_after": 100000, "timestamp": 1762253424},
+    {"type": 2, "amount": 200, "balance_after": 99800, "timestamp": 1762253433}
+  ]
+}
