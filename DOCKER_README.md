@@ -23,7 +23,7 @@ docker run -it --rm -v $(pwd)/data:/data atm-simulator
 docker run -it --rm atm-simulator
 ```
 
-### Option 2: Run with Docker named volume
+### Option 2: Run with Docker named volume (Recommended)
 ```bash
 # Create a named volume
 docker volume create atm-data
