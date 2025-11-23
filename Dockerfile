@@ -11,5 +11,5 @@ WORKDIR /data
 COPY --from=build /src/atm /usr/local/bin/atm
 VOLUME ["/data"]
 RUN adduser -D app && chown -R app:app /data
-USER root
+USER root （app）
 ENTRYPOINT ["atm"]
